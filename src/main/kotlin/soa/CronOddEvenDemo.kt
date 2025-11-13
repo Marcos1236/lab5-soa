@@ -19,10 +19,8 @@ import org.springframework.scheduling.annotation.EnableScheduling
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component
 import java.util.concurrent.atomic.AtomicInteger
-import org.springframework.messaging.support.GenericMessage
-import org.springframework.messaging.MessageChannel
-import kotlin.random.Random
 import kotlin.math.abs
+import kotlin.random.Random
 
 private val logger = LoggerFactory.getLogger("soa.CronOddEvenDemo")
 
@@ -87,7 +85,6 @@ class IntegrationApplication(
                 channel
             }
         }
-
 
     /**
      * Integration flow for processing even numbers.
